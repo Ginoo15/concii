@@ -107,6 +107,20 @@
       margin-bottom: 8px;
     }
 
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 100px;   /* Cambiá el tamaño a gusto */
+      height: 100px;
+      object-fit: cover;
+      border-radius: 90%; /* Si querés que sea circular, sacalo si no lo querés */
+    }
+
+
     .curso p {
       font-size: 1.1rem;
     }
@@ -126,50 +140,68 @@
 <body>
   <header>
     <nav class="navbar">
-      <h1>Centro de Proyectos</h1>
+      <div class="logo-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7q9TtpKoP2zgn1Sd6nuvn7ZnwObmqrYgK0Q&s" alt="Logo" class="logo-img">
+        <h1>Inicio - Materias</h1>
+      </div>
+
       <ul class="nav-links">
         <li><a href="horarios.html">Horarios</a></li>
         <li><a href="profesores.html">Profesores</a></li>
       </ul>
     </nav>
+
   </header>
 
   <main class="contenedor-cursos">
-    <div class="curso" onclick="location.href='curso1.html'" 
-         style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=60');">
-      <h2>1er año</h2>
+    <div class="curso" onclick="location.href='FE.html'" 
+         style="background-image: url('https://profeluisalvarado.wordpress.com/wp-content/uploads/2022/10/arduino.png');">
+      <h2>Formacion Especifica</h2>
       <p></p>
     </div>
 
-    <div class="curso" onclick="location.href='curso2.html'" 
-         style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=60');">
-      <h2>2do año</h2>
+    <div class="curso" onclick="location.href='TIA.html'" 
+         style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0fx-hwPUf5yD2jlUsFD4djOqmY54YihYtApDJbwFdojDbEYxk3HwInDrnGnWI5VVDw0Sx-r4ICIaVH93INaY7dXZmncFo8Lp8UB660wTc04M6qDC_20JkTnFxLYu4fBzWzKmHJ45O7qH1/s1600/64.jpg');">
+      <h2>TIA</h2>
       <p></p>
     </div>
 
-    <div class="curso" onclick="location.href='curso3.html'" 
-         style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=60');">
-      <h2>3er año</h2>
+    <div class="curso" onclick="location.href='EAD.html'" 
+         style="background-image: url('https://universidadeuropea.com/resources/media/images/bases-datos-big-data-1200x630.2e16d0ba.fill-767x384.jpg');">
+      <h2>Estructura y Almacenamiento de Datos</h2>
       <p></p>
     </div>
 
-    <div class="curso" onclick="location.href='curso4.html'" 
-         style="background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1600&q=60');">
-      <h2>4to año</h2>
+    <div class="curso" onclick="location.href='Programacion.html'" 
+         style="background-image: url('https://concepto.de/wp-content/uploads/2020/08/Programacion-informatica-scaled-e1724960033513.jpg');">
+      <h2>Programacion</h2>
       <p></p>
     </div>
 
-    <div class="curso" onclick="location.href='curso5.html'" 
+    <div class="curso" onclick="location.href='Testing.html'" 
          style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=60');">
-      <h2>5to año</h2>
+      <h2>Testing</h2>
       <p></p>
     </div>
 
-    <div class="curso" onclick="location.href='curso6.html'" 
-         style="background-image: url('https://images.unsplash.com/photo-1564325724739-bae0bd08762c?auto=format&fit=crop&w=1600&q=60');">
-      <h2>6to año</h2>
+    <div class="curso" onclick="location.href='EYL.html'" 
+         style="background-image: url('https://blog.lemontech.com/hubfs/Imported_Blog_Media/legislacion-en-informatica-1.jpg');">
+      <h2>Etica y Legislacion</h2>
+      <p></p>
+    </div>
+
+    <div class="curso" onclick="location.href='Robotica.html'" 
+         style="background-image: url('https://img.freepik.com/foto-gratis/robot-casero-escritorio_23-2148863420.jpg?semt=ais_hybrid&w=740&q=80');">
+      <h2>Robotica</h2>
+      <p></p>
+    </div>
+
+    <div class="curso" onclick="location.href='DIU'" 
+         style="background-image: url('https://marketic.com.ar/wp-content/uploads/2025/01/DisenoUXvsUI_web-1024x576.webp');">
+      <h2>Diseño de interfaces y usabilidad</h2>
       <p></p>
     </div>
   </main>
 </body>
 </html>
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso 1 - Proyectos de Diseño Web</title>
+  <style> /* --- NAVBAR --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #1abc9c;
+    }
+    
+    .proyecto-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .proyecto-link:hover .proyecto {
+      transform: scale(1.01);
+    }
+
+    /* --- CONTENEDOR PRINCIPAL --- */
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 40px 10%;
+    }
+
+    /* --- PROYECTO INDIVIDUAL --- */
+    .proyecto {
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .proyecto:hover {
+      transform: scale(1.01);
+    }
+
+    .proyecto-header {
+      display: flex;
+      align-items: center;
+      background-color: #e9ecef;
+      padding: 20px;
+    }
+
+    .proyecto-header img {
+      width: 140px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .proyecto-header .info {
+      flex: 1;
+    }
+
+    .proyecto-header h3 {
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    .proyecto-header p {
+      color: #555;
+    }
+
+    .proyecto-descripcion {
+      background-color: #f7f9fa;
+      padding: 20px;
+      color: #444;
+      border-top: 1px solid #ddd;
+    }
+
+    /* --- VARIACIONES DE FONDO PARA DIFERENCIAR PROYECTOS --- */
+    .proyecto:nth-child(2n) .proyecto-header {
+      background-color: #dfe6e9;
+    }
+
+    .proyecto:nth-child(3n) .proyecto-header {
+      background-color: #d6eaf8;
+    }
+
+    .proyecto:nth-child(4n) .proyecto-header {
+      background-color: #e8daef;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 100px;   /* Cambiá el tamaño a gusto */
+      height: 100px;
+      object-fit: cover;
+      border-radius: 90%; /* Si querés que sea circular, sacalo si no lo querés */
+    }
+
+    @media (max-width: 768px) {
+      .proyecto-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .proyecto-header img {
+        margin: 0 0 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7q9TtpKoP2zgn1Sd6nuvn7ZnwObmqrYgK0Q&s" alt="Logo" class="logo-img">
+        <h1>Diseño de Interfaces y Usabilidad</h1>
+    </div>
+    <a href="index.html">Volver</a>
+  </nav>
+
+  <main class="contenedor">
+
+    <a class="proyecto-link" href="p.html">
+      <section class="proyecto">
+        <div class="proyecto-header">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Curso 1">
+          <div class="info">
+            <h3>Cuarto año</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="proyecto-descripcion">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+    </a>
+  </main>
+</body>
+</html>

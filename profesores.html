@@ -91,6 +91,19 @@
       line-height: 1.4;
     }
 
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 100px;   /* Cambiá el tamaño a gusto */
+      height: 100px;
+      object-fit: cover;
+      border-radius: 90%; /* Si querés que sea circular, sacalo si no lo querés */
+    }
+
     @media (max-width: 768px) {
       .profesor img {
         height: 180px;
@@ -100,8 +113,11 @@
 </head>
 <body>
   <nav class="navbar">
-    <h1>Profesores</h1>
-    <a href="index.html">Volver al inicio</a>
+    <div class="logo-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7q9TtpKoP2zgn1Sd6nuvn7ZnwObmqrYgK0Q&s" alt="Logo" class="logo-img">
+      <h1>Profesores</h1>
+    </div>
+    <a href="index.html">Volver</a>
   </nav>
 
   <main class="contenedor-profes">
@@ -109,7 +125,7 @@
       <img src="" alt="Profesor 1">
       <div class="profesor-info">
         <h3>Cristian Conci</h3>
-        <h4>TIA/Club de Ciencias/Formacion Específica</h4>
+        <h4>TIA / Formacion Específica</h4>
         <p>Profesor de las multiples materias de la formacion especifica en ciclo basico y parte de ciclo orientado</p>
       </div>
     </div>
@@ -118,7 +134,7 @@
       <img src="" alt="Profesor 2">
       <div class="profesor-info">
         <h3>Santiago Lazcano</h3>
-        <h4>Programación / Testing / Club de Ciencias</h4>
+        <h4>Programación / Testing</h4>
         <p>Profesor de programación en 5to año y testing en 6to año</p>
       </div>
     </div>
@@ -136,8 +152,8 @@
       <img src="" alt="Profesor 4">
       <div class="profesor-info">
         <h3>Andres Bianchi</h3>
-        <h4>Almacenamiento de datos y etica y legislacion</h4>
-        <p></p>
+        <h4>Almacenamiento de datos / Etica y legislacion</h4>
+        <p>Profesor en 4to año</p>
       </div>
     </div>
 

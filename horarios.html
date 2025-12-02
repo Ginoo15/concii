@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horarios</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #2c3e50;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      color: #1abc9c;
+    }
+
+    /* CONTENEDOR */
+    .contenedor {
+      padding: 40px 8%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2c3e50;
+    }
+
+    /* TARJETAS DE HORARIOS */
+    .dias-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    
+    .dias-grid {
+        margin-bottom: 40px;
+    }
+
+    .dia {
+      background-color: #ffffff;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .dia:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .dia h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #2c3e50;
+      font-size: 1.3rem;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-img {
+        width: 100px;   /* Cambiá el tamaño a gusto */
+        height: 100px;
+        object-fit: cover;
+        border-radius: 90%; /* Si querés que sea circular, sacalo si no lo querés */
+    }
+
+    .materia {
+      background-color: #ecf0f1;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.2s;
+    }
+
+    .materia:hover {
+      background-color: #dfe6e9;
+    }
+
+    .materia span {
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    .hora {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7q9TtpKoP2zgn1Sd6nuvn7ZnwObmqrYgK0Q&s" alt="Logo" class="logo-img">
+        <h1>Horarios</h1>
+    </div>
+    <a href="index.html">Volver</a>
+  </nav>
+  
+  <div class="contenedor">
+    <h2>Primer Año</h2>
+
+    <div class="dias-grid">
+
+      <!-- Martes -->
+      <div class="dia">
+        <h3>Martes</h3>
+
+        <div class="materia">
+          <span>Sistema Operativo y Software de Aplicacion</span>
+          <div class="hora">10:40 - 12:00</div>
+        </div>
+      </div>
+
+      <!-- Jueves -->
+      <div class="dia">
+        <h3>Jueves</h3>
+
+        <div class="materia">
+          <span>Taller de Ingles Aplicado</span>
+          <div class="hora">15:20 - 19:40</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Segundo Año</h2>
+
+    <div class="dias-grid">
+
+      <!-- Lunes -->
+      <div class="dia">
+        <h3>Lunes</h3>
+
+        <div class="materia">
+          <span>Taller de Ingles Aplicado</span>
+          <div class="hora">11:00 - 12:20</div>
+        </div>
+
+        <div class="materia">
+          <span>Almacenamiento de Datos</span>
+          <div class="hora">12:40 - 14:00</div>
+        </div>
+      </div>
+
+      <!-- Martes -->
+      <div class="dia">
+        <h3>Martes</h3>
+
+        <div class="materia">
+          <span>Algoritmo y Programación</span>
+          <div class="hora">12:40 - 14:00</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Tercer Año</h2>
+
+    <div class="dias-grid">
+
+      <!-- Miércoles -->
+      <div class="dia">
+        <h3>Miércoles</h3>
+
+        <div class="materia">
+          <span>Taller de Ingles Aplicado</span>
+          <div class="hora">12:10 - 13:30</div>
+        </div>
+      </div>
+
+      <!-- Jueves -->
+      <div class="dia">
+        <h3>Jueves</h3>
+
+        <div class="materia">
+          <span>Programacion</span>
+          <div class="hora">12:40 - 14:00</div>
+        </div>
+
+        <div class="materia">
+          <span>Almacenamiento de Datos</span>
+          <div class="hora">14:10 - 15:30</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Cuarto Año</h2>
+
+    <div class="dias-grid">
+
+      <!-- Lunes -->
+      <div class="dia">
+        <h3>Lunes</h3>
+
+        <div class="materia">
+          <span>Programacion II</span>
+          <div class="hora">10:20 - 11:40</div>
+        </div>
+
+        <div class="materia">
+          <span>Diseño de Interfaces</span>
+          <div class="hora">11:50 - 12:50</div>
+        </div>
+      </div>
+
+      <!-- Martes -->
+      <div class="dia">
+        <h3>Martes</h3>
+
+        <div class="materia">
+          <span>Diseño de Interfaces</span>
+          <div class="hora">12:45 - 13:45</div>
+        </div>
+
+        <div class="materia">
+          <span>Taller de Ingles Aplicado</span>
+          <div class="hora">15:20 - 16:20</div>
+        </div>
+      </div>
+
+      <!-- Jueves -->
+      <div class="dia">
+        <h3>Jueves</h3>
+
+        <div class="materia">
+          <span>Programacion II</span>
+          <div class="hora">11:30 - 12:50</div>
+        </div>
+      </div>
+
+      <!-- Viernes -->
+      <div class="dia">
+        <h3>Viernes</h3>
+
+        <div class="materia">
+          <span>Almacenamiento de Datos</span>
+          <div class="hora">12:40 - 13:40</div>
+        </div>
+
+        <div class="materia">
+          <span>Almacenamiento de Datos</span>
+          <div class="hora">13:50 - 14:50</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Quinto Año</h2>
+
+    <div class="dias-grid">
+
+      <!-- Martes -->
+      <div class="dia">
+        <h3>Martes</h3>
+
+        <div class="materia">
+          <span>Taller de Ingles Aplicado</span>
+          <div class="hora">08:50 - 10:10</div>
+        </div>
+      </div>
+
+      <!-- Miércoles -->
+      <div class="dia">
+        <h3>Miércoles</h3>
+
+        <div class="materia">
+          <span>Programacion III</span>
+          <div class="hora">08:50 - 10:10</div>
+        </div>
+
+        <div class="materia">
+          <span>Robotica</span>
+          <div class="hora">11:50 - 12:50</div>
+        </div>
+
+        <div class="materia">
+          <span>Robotica</span>
+          <div class="hora">13:10 - 14:10</div>
+        </div>
+      </div>
+
+      <!-- Jueves -->
+      <div class="dia">
+        <h3>Jueves</h3>
+
+        <div class="materia">
+          <span>Programacion III</span>
+          <div class="hora">10:20 - 11:40</div>
+        </div>
+
+        <div class="materia">
+          <span>Club de Ciencias</span>
+          <div class="hora">13:10 - 14:30</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Sexto Año</h2>
+
+    <div class="dias-grid">
+
+      <!-- Lunes -->
+      <div class="dia">
+        <h3>Lunes</h3>
+
+        <div class="materia">
+          <span>Programacion</span>
+          <div class="hora">08:50 - 10:10</div>
+        </div>
+
+        <div class="materia">
+          <span>Programacion</span>
+          <div class="hora">10:20 - 11:40</div>
+        </div>
+      </div>
+
+      <!-- Miércoles -->
+      <div class="dia">
+        <h3>Miércoles</h3>
+
+        <div class="materia">
+          <span>Programacion</span>
+          <div class="hora">08:50 - 10:10</div>
+        </div>
+
+        <div class="materia">
+          <span>Testing</span>
+          <div class="hora">10:20 - 11:40</div>
+        </div>
+
+        <div class="materia">
+          <span>Taller de Ingles Aplicado</span>
+          <div class="hora">16:00 - 17:20</div>
+        </div>
+
+        <div class="materia">
+            <span>Taller de Ingles Aplicado</span>
+            <div class="hora">16:00 - 17:20</div>
+        </div>
+      </div>
+    
+    </div>
+
+  </div>
+
+</body>
+</html>
